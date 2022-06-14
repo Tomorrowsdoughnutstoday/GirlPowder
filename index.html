@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girl Powder</title>
+    <!-- CSS and Bootstrap stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Resources/CSS/index.css" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font aswesome -->
+    <script
+      src="https://kit.fontawesome.com/54bb575be5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BS JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation and banner -->
+
+    <header>
+      <div id="nav-and-banner" class="container-fluid">
+        <nav>
+          <div class="nav-options">
+            <div class="nav-item pin-icon">
+              <a href="#contact-section"
+                ><i class="fa-solid fa-location-pin"></i
+              ></a>
+            </div>
+            <div class="nav-item email-icon">
+              <a href="#contact-section"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <div class="nav-item burger-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+        <img
+          class="banner-img"
+          src="./Resources/Images/Banner Image.jpg"
+          alt="Background image of snowboarder riding in deep snow"
+        />
+        <div class="title">
+          <h1>GirlPowder</h1>
+          <span class="title-location-span">@ Arctic Diamond Ski Hill</span>
+        </div>
+        <button
+          type="button"
+          class="btn btn-outline-dark page-button banner-button"
+        >
+          Join Us
+        </button>
+        <!--Button will display on min screen size 550px -->
+      </div>
+    </header>
+    <main>
+      <div id="about-club" class="container-fluid">
+        <div class="intro row">
+          <div class="intro-item col-md-6 intro-sub-heading">
+            <h2>Join an easygoing snowboarding crew</h2>
+          </div>
+          <div class="intro-item col-md-6 intro-text">
+            <p>
+              GirlPowder is a snowboarding club for women. Whatever your
+              ability, style or goal, get to the next level by joining a super
+              cool snowboarding crew. We’re an easygoing bunch and often our
+              meetups will involve a leasuirely day riding together or an
+              afternoon spent at the park. And every-so-often, we’ll be joined
+              by a special guest who might just teach us something new!
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-dark page-button intro-button"
+            >
+              Join Us
+            </button>
+            <!--Button will display on max screen size 550px-->
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img src="./Resources/Images/Jump jump.jpg" alt="" />
+            </div>
+            <div class="gallery-action">
+              <span>Club Videos</span>
+              <button
+                type="button"
+                class="btn btn-outline-dark page-button gallery-button"
+              >
+                View Gallery
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img src="./Resources/Images/Moody.jpg" alt="" />
+            </div>
+            <div class="gallery-action">
+              <span>Special Guests</span>
+              <button
+                type="button"
+                class="btn btn-outline-dark page-button gallery-button"
+              >
+                See details
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-img">
+              <img src="./Resources/Images/j&g.jpg" alt="" />
+            </div>
+            <div class="gallery-action">
+              <span>Club Events</span>
+              <button
+                type="button"
+                class="btn btn-outline-dark page-button gallery-button"
+              >
+                See Calendar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-section" class="container-fluid">
+        <div class="contact-info-container">
+          <div class="contact-info-item find-us">
+            <div class="location-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>We meet at the Hut every Thursday at 12pm (ish)</h3>
+            <button
+              type="button"
+              class="btn btn-outline-dark page-button find-us-button"
+            >
+              Join Us
+            </button>
+          </div>
+          <div class="contact-info-item contact-us">
+            <h3>Any Questions? <br />Get in touch!</h3>
+            <div class="contact-form">
+              <label for="name">First name</label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="1"
+                maxlength="12"
+              />
+              <br />
+              <label for="email">Email</label>
+
+              <input
+                type="email"
+                id="email"
+                pattern=".+@globex\.com"
+                size="30"
+                required
+              />
+              <br />
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="33"
+              ></textarea>
+
+              <button
+                type="button"
+                class="btn btn-outline-dark page-button submit-button"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social-items">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <a href="#" class="resort-link">Ski Arctic Diamond</a>
+      <p>
+        Fictional club homepage project | Website designed by
+        <a href="www.linkedin.com/in/jessica-stansfield-250725160/"
+          >Jess Stansfield</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
